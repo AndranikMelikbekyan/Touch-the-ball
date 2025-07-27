@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+    body { margin: 0; background: #eee; }
+
+    .banner {
+      width: 300px;
+      height: 250px;
+      background: linear-gradient(to top, #001f3f, #0074D9);
+      position: relative;
+      overflow: hidden;
+      font-family: sans-serif;
+      border-radius: 8px;
+      color: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+
+    .score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .coin {
+      width: 24px;
+      height: 24px;
+      background: gold;
+      border-radius: 50%;
+      position: absolute;
+      top: -30px;
+      cursor: pointer;
+      box-shadow: 0 0 6px #ffd700;
+      animation: fall 4s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { top: -30px; }
+      100% { top: 270px; }
+    }
+
+    .cta {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffdc00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta:hover {
+      background: #ffc107;
+    }
